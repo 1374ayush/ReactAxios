@@ -24,6 +24,7 @@ const Home = () =>{
     //update Api calling 
     const updateCar = () => {
         console.log("car update logic");
+        console.log("repairing log data")
     }
 
     return(
