@@ -21,6 +21,11 @@ const Home = () =>{
         setDelete(true);
     }
 
+    //update Api calling 
+    const updateCar = () => {
+        console.log("car update logic");
+    }
+
     return(
     <>
 
@@ -31,6 +36,7 @@ const Home = () =>{
       {data.map((item) => (
         <div key={item.id}>{item.carModel} 
         <button key={item.id} onClick={()=>deleteCar(item.id)}>delete</button>
+        <button key={item.id} onClick={()=>updateCar(item.id)}>update</button>
         </div>
        
       ))}
